@@ -1,104 +1,98 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
-}
-body {
+    background-color: #e2ddd8;
     font-family: "Anta", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-.main {
+    overflow: hidden;
+
+}
+h1{
+    margin: 3vh 0 2vh 0;
+    text-align: center;
+}
+.display{
+    width: 95%;
+    height: 8vh;
+    font-size: 350%;
+    border-radius: 10px;
+    margin: 3vh 0 1vh 0;
+    background-color: #FAEED1;
+    color: #000000;
+    font-family: "Anta", sans-serif;
+}
+.main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-
-body h1 {
-    text-align: center;
-    margin: 7vh 3vw 3vh 3vw;
-    color: #C70039;
-
-}
-
-.display {
+.keys{
+    height: 60vh;
     width: 95%;
-    height: 20vw;
-    background-color: #FFF5E0;
-    color: #141E46;
-    font-family: "Anta", sans-serif;
-    font-size: 400%;
-    border-radius: 20px;
-    border: 3px solid #141E46;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 6% 5%;
 
 }
 
-.calc {
-    text-align: center;
-}
-
-.keys {
-    margin: 7vh 0 0 0;
-    width: 95%;
-
-}
-
-.keys button {
-    width: 23%;
-    font-size: 360%;
-    padding: 2%;
-    text-align: center;
+button{
+    font-size: 200%;
+    padding: 3vw;
     border: none;
-    margin: 2px;
     font-family: "Anta", sans-serif;
-}
 
-.nums {
+}
+.nums{
     border-radius: 50%;
-    background-color: #FF6969;
-    color: #141E46;
+    background-color: #B2A59B;
+    color: black;
 }
-
-.operators {
-    border-radius: 0;
-    background-color: #141E46;
-    color: #FF6969;
-    border-radius: 50px;
+.operators{
+    border-radius: 30px;
+    background-color: #315458;
+    color: rgb(255, 255, 255);
 }
-
-#equalbtn {
-    width: 98%;
+#equalbtn{
+    grid-column: 1/5;
+}
+.copy p{
+    margin: 2vw 0;
+    text-align: center;
 }
 
 @media screen and (min-width:600px) {
-    .display {
-        height: 10vh;
-        width: 73%;
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
-
-    .keys button {
-        width: 20%;
-        height: 15vh;
-        font-size: 300%;
-        
-
+    .main{
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 40%;
+        height: 80vh;
 
     }
-
-    .keys {
-        margin: 3vh 0 0 0;
-        width: 95%;
+    .display{
+        width: 80%;
+        margin: 0 0 2vh 0;
     }
-    #equalbtn {
-        width: 83%;
+    .keys{
+        height: 85%;
+        width: 80%;
     }
-    body h1 {
-        margin: 2vh 3vw 3vh 3vw;
+    button{
+        font-size: 30px;
+        padding: 10px;
+    }
+    h1{
+        margin: 2vh 0;
+        text-align: center;
+    }
     
-    }
-    
-
 }
