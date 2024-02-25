@@ -15,7 +15,7 @@ function calculate() {
         displayValue = eval(displayValue);
         document.querySelector('.display').value = displayValue;
     } catch (error) {
-        document.querySelector('.display').value = 'ERROR';
+        document.querySelector('.display').value = 'SYNTEX ERROR';
     }
 }
 
